@@ -1,8 +1,8 @@
-#  How to delete all text markup annotations from a PDF document
+#  How to create a text markup annotation and specify its properties
 
-<p>This example shows how to delete all markup annotations from document pages.</p>
-<p>To retrieve all text markup annotations in a page, call the <a href="https://documentation.devexpress.com/OfficeFileAPI/DevExpress.Pdf.PdfDocumentProcessor.GetMarkupAnnotationData.method"><u>PdfDocumentProcessor.GetMarkupAnnotationData</u></a>  method with a specified page number.</p>
+<p>This example shows how to create a markup annotation that highlights a selected text on a page.</p>
 
-<p>To delete all markup annotations, call the  <a href="https://documentation.devexpress.com/OfficeFileAPI/DevExpress.Pdf.PdfDocumentProcessor.DeleteMarkupAnnotations.method"><u>PdfDocumentProcessor.DeleteMarkupAnnotations</u> </a> method passing the markup annotation list as an argument to this method.</p>
+<p>To create this annotation for a selected text, call one of the <a href="https://documentation.devexpress.com/WindowsForms/DevExpress.XtraPdfViewer.PdfViewer.HighlightSelectedText.overloads"><u>PdfViewer.HighlightSelectedText</u></a> overload methods.</p>
 
+<p>To specify the annotation properties when the markup  annotation is creating, handle the <a href="https://documentation.devexpress.com/WindowsForms/DevExpress.XtraPdfViewer.PdfViewer.TextMarkupAnnotationCreating.event"><u>PdfViewer.TextMarkupAnnotationCreating</u></a> event.</p>
 <br/>
