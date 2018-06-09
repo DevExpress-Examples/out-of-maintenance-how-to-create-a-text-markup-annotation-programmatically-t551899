@@ -1,4 +1,4 @@
-﻿namespace MarkupAnnotationCreation {
+﻿namespace CreateMarkupAnnotation {
     partial class Form1 {
         /// <summary>
         /// Required designer variable.
@@ -24,18 +24,22 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pdfViewer1 = new DevExpress.XtraPdfViewer.PdfViewer();
-            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
-            this.pdfCommandBar1 = new DevExpress.XtraPdfViewer.Bars.PdfCommandBar();
+            this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.pdfBarController1 = new DevExpress.XtraPdfViewer.Bars.PdfBarController();
+            this.pdfFileRibbonPageGroup1 = new DevExpress.XtraPdfViewer.Bars.PdfFileRibbonPageGroup();
+            this.pdfRibbonPage1 = new DevExpress.XtraPdfViewer.Bars.PdfRibbonPage();
             this.pdfFileOpenBarItem1 = new DevExpress.XtraPdfViewer.Bars.PdfFileOpenBarItem();
             this.pdfFileSaveAsBarItem1 = new DevExpress.XtraPdfViewer.Bars.PdfFileSaveAsBarItem();
             this.pdfFilePrintBarItem1 = new DevExpress.XtraPdfViewer.Bars.PdfFilePrintBarItem();
+            this.pdfFindRibbonPageGroup1 = new DevExpress.XtraPdfViewer.Bars.PdfFindRibbonPageGroup();
             this.pdfFindTextBarItem1 = new DevExpress.XtraPdfViewer.Bars.PdfFindTextBarItem();
+            this.pdfNavigationRibbonPageGroup1 = new DevExpress.XtraPdfViewer.Bars.PdfNavigationRibbonPageGroup();
             this.pdfPreviousPageBarItem1 = new DevExpress.XtraPdfViewer.Bars.PdfPreviousPageBarItem();
             this.pdfNextPageBarItem1 = new DevExpress.XtraPdfViewer.Bars.PdfNextPageBarItem();
             this.pdfSetPageNumberBarItem1 = new DevExpress.XtraPdfViewer.Bars.PdfSetPageNumberBarItem();
             this.repositoryItemPageNumberEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPageNumberEdit();
+            this.pdfZoomRibbonPageGroup1 = new DevExpress.XtraPdfViewer.Bars.PdfZoomRibbonPageGroup();
             this.pdfZoomOutBarItem1 = new DevExpress.XtraPdfViewer.Bars.PdfZoomOutBarItem();
             this.pdfZoomInBarItem1 = new DevExpress.XtraPdfViewer.Bars.PdfZoomInBarItem();
             this.pdfExactZoomListBarSubItem1 = new DevExpress.XtraPdfViewer.Bars.PdfExactZoomListBarSubItem();
@@ -53,42 +57,33 @@
             this.pdfSetPageLevelZoomModeCheckItem1 = new DevExpress.XtraPdfViewer.Bars.PdfSetPageLevelZoomModeCheckItem();
             this.pdfSetFitWidthZoomModeCheckItem1 = new DevExpress.XtraPdfViewer.Bars.PdfSetFitWidthZoomModeCheckItem();
             this.pdfSetFitVisibleZoomModeCheckItem1 = new DevExpress.XtraPdfViewer.Bars.PdfSetFitVisibleZoomModeCheckItem();
-            this.pdfExportFormDataBarItem1 = new DevExpress.XtraPdfViewer.Bars.PdfExportFormDataBarItem();
-            this.pdfImportFormDataBarItem1 = new DevExpress.XtraPdfViewer.Bars.PdfImportFormDataBarItem();
-            this.pdfCommentBar1 = new DevExpress.XtraPdfViewer.Bars.PdfCommentBar();
+            this.pdfTextCommentPageGroup1 = new DevExpress.XtraPdfViewer.Bars.PdfTextCommentPageGroup();
+            this.pdfCommentRibbonPage1 = new DevExpress.XtraPdfViewer.Bars.PdfCommentRibbonPage();
             this.pdfTextHighlightBarItem1 = new DevExpress.XtraPdfViewer.Bars.PdfTextHighlightBarItem();
             this.pdfTextStrikethroughBarItem1 = new DevExpress.XtraPdfViewer.Bars.PdfTextStrikethroughBarItem();
             this.pdfTextUnderlineBarItem1 = new DevExpress.XtraPdfViewer.Bars.PdfTextUnderlineBarItem();
-            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.pdfBarController1 = new DevExpress.XtraPdfViewer.Bars.PdfBarController();
-            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPageNumberEdit1)).BeginInit();
+            this.pdfFormDataBarPageGroup1 = new DevExpress.XtraPdfViewer.Bars.PdfFormDataBarPageGroup();
+            this.pdfFormDataRibbonPage1 = new DevExpress.XtraPdfViewer.Bars.PdfFormDataRibbonPage();
+            this.pdfExportFormDataBarItem1 = new DevExpress.XtraPdfViewer.Bars.PdfExportFormDataBarItem();
+            this.pdfImportFormDataBarItem1 = new DevExpress.XtraPdfViewer.Bars.PdfImportFormDataBarItem();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pdfBarController1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPageNumberEdit1)).BeginInit();
             this.SuspendLayout();
             // 
             // pdfViewer1
             // 
             this.pdfViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pdfViewer1.Location = new System.Drawing.Point(0, 31);
-            this.pdfViewer1.MenuManager = this.barManager1;
+            this.pdfViewer1.Location = new System.Drawing.Point(0, 141);
             this.pdfViewer1.Name = "pdfViewer1";
-            this.pdfViewer1.Size = new System.Drawing.Size(902, 564);
+            this.pdfViewer1.Size = new System.Drawing.Size(667, 336);
             this.pdfViewer1.TabIndex = 0;
             // 
-            // barManager1
+            // ribbonControl1
             // 
-            this.barManager1.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
-            this.pdfCommandBar1,
-            this.pdfCommentBar1});
-            this.barManager1.DockControls.Add(this.barDockControlTop);
-            this.barManager1.DockControls.Add(this.barDockControlBottom);
-            this.barManager1.DockControls.Add(this.barDockControlLeft);
-            this.barManager1.DockControls.Add(this.barDockControlRight);
-            this.barManager1.Form = this;
-            this.barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.ribbonControl1.ExpandCollapseItem.Id = 0;
+            this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.ribbonControl1.ExpandCollapseItem,
             this.pdfFileOpenBarItem1,
             this.pdfFileSaveAsBarItem1,
             this.pdfFilePrintBarItem1,
@@ -118,249 +113,18 @@
             this.pdfTextUnderlineBarItem1,
             this.pdfExportFormDataBarItem1,
             this.pdfImportFormDataBarItem1});
-            this.barManager1.MaxItemId = 29;
-            this.barManager1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.MaxItemId = 30;
+            this.ribbonControl1.Name = "ribbonControl1";
+            this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.pdfRibbonPage1,
+            this.pdfCommentRibbonPage1,
+            this.pdfFormDataRibbonPage1});
+            this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemPageNumberEdit1});
-            // 
-            // pdfCommandBar1
-            // 
-            this.pdfCommandBar1.Control = this.pdfViewer1;
-            this.pdfCommandBar1.DockCol = 0;
-            this.pdfCommandBar1.DockRow = 0;
-            this.pdfCommandBar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            this.pdfCommandBar1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfFileOpenBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfFileSaveAsBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfFilePrintBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfFindTextBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfPreviousPageBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfNextPageBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfSetPageNumberBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfZoomOutBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfZoomInBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfExactZoomListBarSubItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfExportFormDataBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfImportFormDataBarItem1)});
-            // 
-            // pdfFileOpenBarItem1
-            // 
-            this.pdfFileOpenBarItem1.Id = 0;
-            this.pdfFileOpenBarItem1.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O));
-            this.pdfFileOpenBarItem1.Name = "pdfFileOpenBarItem1";
-            // 
-            // pdfFileSaveAsBarItem1
-            // 
-            this.pdfFileSaveAsBarItem1.Id = 1;
-            this.pdfFileSaveAsBarItem1.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S));
-            this.pdfFileSaveAsBarItem1.Name = "pdfFileSaveAsBarItem1";
-            // 
-            // pdfFilePrintBarItem1
-            // 
-            this.pdfFilePrintBarItem1.Id = 2;
-            this.pdfFilePrintBarItem1.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P));
-            this.pdfFilePrintBarItem1.Name = "pdfFilePrintBarItem1";
-            // 
-            // pdfFindTextBarItem1
-            // 
-            this.pdfFindTextBarItem1.Id = 3;
-            this.pdfFindTextBarItem1.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F));
-            this.pdfFindTextBarItem1.Name = "pdfFindTextBarItem1";
-            // 
-            // pdfPreviousPageBarItem1
-            // 
-            this.pdfPreviousPageBarItem1.Id = 4;
-            this.pdfPreviousPageBarItem1.Name = "pdfPreviousPageBarItem1";
-            // 
-            // pdfNextPageBarItem1
-            // 
-            this.pdfNextPageBarItem1.Id = 5;
-            this.pdfNextPageBarItem1.Name = "pdfNextPageBarItem1";
-            // 
-            // pdfSetPageNumberBarItem1
-            // 
-            this.pdfSetPageNumberBarItem1.Edit = this.repositoryItemPageNumberEdit1;
-            this.pdfSetPageNumberBarItem1.EditValue = 0;
-            this.pdfSetPageNumberBarItem1.Enabled = false;
-            this.pdfSetPageNumberBarItem1.Id = 6;
-            this.pdfSetPageNumberBarItem1.Name = "pdfSetPageNumberBarItem1";
-            // 
-            // repositoryItemPageNumberEdit1
-            // 
-            this.repositoryItemPageNumberEdit1.AutoHeight = false;
-            this.repositoryItemPageNumberEdit1.Mask.EditMask = "########;";
-            this.repositoryItemPageNumberEdit1.Name = "repositoryItemPageNumberEdit1";
-            this.repositoryItemPageNumberEdit1.Orientation = DevExpress.XtraEditors.PagerOrientation.Horizontal;
-            // 
-            // pdfZoomOutBarItem1
-            // 
-            this.pdfZoomOutBarItem1.Id = 7;
-            this.pdfZoomOutBarItem1.Name = "pdfZoomOutBarItem1";
-            // 
-            // pdfZoomInBarItem1
-            // 
-            this.pdfZoomInBarItem1.Id = 8;
-            this.pdfZoomInBarItem1.Name = "pdfZoomInBarItem1";
-            // 
-            // pdfExactZoomListBarSubItem1
-            // 
-            this.pdfExactZoomListBarSubItem1.Id = 9;
-            this.pdfExactZoomListBarSubItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfZoom10CheckItem1, true),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfZoom25CheckItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfZoom50CheckItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfZoom75CheckItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfZoom100CheckItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfZoom125CheckItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfZoom150CheckItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfZoom200CheckItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfZoom400CheckItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfZoom500CheckItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfSetActualSizeZoomModeCheckItem1, true),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfSetPageLevelZoomModeCheckItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfSetFitWidthZoomModeCheckItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfSetFitVisibleZoomModeCheckItem1)});
-            this.pdfExactZoomListBarSubItem1.Name = "pdfExactZoomListBarSubItem1";
-            this.pdfExactZoomListBarSubItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
-            // 
-            // pdfZoom10CheckItem1
-            // 
-            this.pdfZoom10CheckItem1.Id = 10;
-            this.pdfZoom10CheckItem1.Name = "pdfZoom10CheckItem1";
-            // 
-            // pdfZoom25CheckItem1
-            // 
-            this.pdfZoom25CheckItem1.Id = 11;
-            this.pdfZoom25CheckItem1.Name = "pdfZoom25CheckItem1";
-            // 
-            // pdfZoom50CheckItem1
-            // 
-            this.pdfZoom50CheckItem1.Id = 12;
-            this.pdfZoom50CheckItem1.Name = "pdfZoom50CheckItem1";
-            // 
-            // pdfZoom75CheckItem1
-            // 
-            this.pdfZoom75CheckItem1.Id = 13;
-            this.pdfZoom75CheckItem1.Name = "pdfZoom75CheckItem1";
-            // 
-            // pdfZoom100CheckItem1
-            // 
-            this.pdfZoom100CheckItem1.Id = 14;
-            this.pdfZoom100CheckItem1.Name = "pdfZoom100CheckItem1";
-            // 
-            // pdfZoom125CheckItem1
-            // 
-            this.pdfZoom125CheckItem1.Id = 15;
-            this.pdfZoom125CheckItem1.Name = "pdfZoom125CheckItem1";
-            // 
-            // pdfZoom150CheckItem1
-            // 
-            this.pdfZoom150CheckItem1.Id = 16;
-            this.pdfZoom150CheckItem1.Name = "pdfZoom150CheckItem1";
-            // 
-            // pdfZoom200CheckItem1
-            // 
-            this.pdfZoom200CheckItem1.Id = 17;
-            this.pdfZoom200CheckItem1.Name = "pdfZoom200CheckItem1";
-            // 
-            // pdfZoom400CheckItem1
-            // 
-            this.pdfZoom400CheckItem1.Id = 18;
-            this.pdfZoom400CheckItem1.Name = "pdfZoom400CheckItem1";
-            // 
-            // pdfZoom500CheckItem1
-            // 
-            this.pdfZoom500CheckItem1.Id = 19;
-            this.pdfZoom500CheckItem1.Name = "pdfZoom500CheckItem1";
-            // 
-            // pdfSetActualSizeZoomModeCheckItem1
-            // 
-            this.pdfSetActualSizeZoomModeCheckItem1.Id = 20;
-            this.pdfSetActualSizeZoomModeCheckItem1.Name = "pdfSetActualSizeZoomModeCheckItem1";
-            // 
-            // pdfSetPageLevelZoomModeCheckItem1
-            // 
-            this.pdfSetPageLevelZoomModeCheckItem1.Id = 21;
-            this.pdfSetPageLevelZoomModeCheckItem1.Name = "pdfSetPageLevelZoomModeCheckItem1";
-            // 
-            // pdfSetFitWidthZoomModeCheckItem1
-            // 
-            this.pdfSetFitWidthZoomModeCheckItem1.Id = 22;
-            this.pdfSetFitWidthZoomModeCheckItem1.Name = "pdfSetFitWidthZoomModeCheckItem1";
-            // 
-            // pdfSetFitVisibleZoomModeCheckItem1
-            // 
-            this.pdfSetFitVisibleZoomModeCheckItem1.Id = 23;
-            this.pdfSetFitVisibleZoomModeCheckItem1.Name = "pdfSetFitVisibleZoomModeCheckItem1";
-            // 
-            // pdfExportFormDataBarItem1
-            // 
-            this.pdfExportFormDataBarItem1.Id = 24;
-            this.pdfExportFormDataBarItem1.Name = "pdfExportFormDataBarItem1";
-            // 
-            // pdfImportFormDataBarItem1
-            // 
-            this.pdfImportFormDataBarItem1.Id = 25;
-            this.pdfImportFormDataBarItem1.Name = "pdfImportFormDataBarItem1";
-            // 
-            // pdfCommentBar1
-            // 
-            this.pdfCommentBar1.Control = this.pdfViewer1;
-            this.pdfCommentBar1.DockCol = 1;
-            this.pdfCommentBar1.DockRow = 0;
-            this.pdfCommentBar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            this.pdfCommentBar1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfTextHighlightBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfTextStrikethroughBarItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.pdfTextUnderlineBarItem1)});
-            // 
-            // pdfTextHighlightBarItem1
-            // 
-            this.pdfTextHighlightBarItem1.Id = 26;
-            this.pdfTextHighlightBarItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("pdfTextHighlightBarItem1.ImageOptions.Image")));
-            this.pdfTextHighlightBarItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("pdfTextHighlightBarItem1.ImageOptions.LargeImage")));
-            this.pdfTextHighlightBarItem1.Name = "pdfTextHighlightBarItem1";
-            // 
-            // pdfTextStrikethroughBarItem1
-            // 
-            this.pdfTextStrikethroughBarItem1.Id = 27;
-            this.pdfTextStrikethroughBarItem1.Name = "pdfTextStrikethroughBarItem1";
-            // 
-            // pdfTextUnderlineBarItem1
-            // 
-            this.pdfTextUnderlineBarItem1.Id = 28;
-            this.pdfTextUnderlineBarItem1.Name = "pdfTextUnderlineBarItem1";
-            // 
-            // barDockControlTop
-            // 
-            this.barDockControlTop.CausesValidation = false;
-            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(902, 31);
-            // 
-            // barDockControlBottom
-            // 
-            this.barDockControlBottom.CausesValidation = false;
-            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 595);
-            this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(902, 0);
-            // 
-            // barDockControlLeft
-            // 
-            this.barDockControlLeft.CausesValidation = false;
-            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 31);
-            this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 564);
-            // 
-            // barDockControlRight
-            // 
-            this.barDockControlRight.CausesValidation = false;
-            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(902, 31);
-            this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 564);
+            this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
+            this.ribbonControl1.Size = new System.Drawing.Size(667, 141);
+            this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Above;
             // 
             // pdfBarController1
             // 
@@ -395,22 +159,254 @@
             this.pdfBarController1.BarItems.Add(this.pdfImportFormDataBarItem1);
             this.pdfBarController1.Control = this.pdfViewer1;
             // 
+            // pdfFileRibbonPageGroup1
+            // 
+            this.pdfFileRibbonPageGroup1.ItemLinks.Add(this.pdfFileOpenBarItem1);
+            this.pdfFileRibbonPageGroup1.ItemLinks.Add(this.pdfFileSaveAsBarItem1);
+            this.pdfFileRibbonPageGroup1.ItemLinks.Add(this.pdfFilePrintBarItem1);
+            this.pdfFileRibbonPageGroup1.Name = "pdfFileRibbonPageGroup1";
+            // 
+            // pdfRibbonPage1
+            // 
+            this.pdfRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.pdfFileRibbonPageGroup1,
+            this.pdfFindRibbonPageGroup1,
+            this.pdfNavigationRibbonPageGroup1,
+            this.pdfZoomRibbonPageGroup1});
+            this.pdfRibbonPage1.Name = "pdfRibbonPage1";
+            // 
+            // pdfFileOpenBarItem1
+            // 
+            this.pdfFileOpenBarItem1.Id = 1;
+            this.pdfFileOpenBarItem1.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O));
+            this.pdfFileOpenBarItem1.Name = "pdfFileOpenBarItem1";
+            // 
+            // pdfFileSaveAsBarItem1
+            // 
+            this.pdfFileSaveAsBarItem1.Id = 2;
+            this.pdfFileSaveAsBarItem1.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S));
+            this.pdfFileSaveAsBarItem1.Name = "pdfFileSaveAsBarItem1";
+            // 
+            // pdfFilePrintBarItem1
+            // 
+            this.pdfFilePrintBarItem1.Id = 3;
+            this.pdfFilePrintBarItem1.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P));
+            this.pdfFilePrintBarItem1.Name = "pdfFilePrintBarItem1";
+            // 
+            // pdfFindRibbonPageGroup1
+            // 
+            this.pdfFindRibbonPageGroup1.AllowTextClipping = false;
+            this.pdfFindRibbonPageGroup1.ItemLinks.Add(this.pdfFindTextBarItem1);
+            this.pdfFindRibbonPageGroup1.Name = "pdfFindRibbonPageGroup1";
+            // 
+            // pdfFindTextBarItem1
+            // 
+            this.pdfFindTextBarItem1.Id = 4;
+            this.pdfFindTextBarItem1.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F));
+            this.pdfFindTextBarItem1.Name = "pdfFindTextBarItem1";
+            // 
+            // pdfNavigationRibbonPageGroup1
+            // 
+            this.pdfNavigationRibbonPageGroup1.ItemLinks.Add(this.pdfPreviousPageBarItem1);
+            this.pdfNavigationRibbonPageGroup1.ItemLinks.Add(this.pdfNextPageBarItem1);
+            this.pdfNavigationRibbonPageGroup1.ItemLinks.Add(this.pdfSetPageNumberBarItem1);
+            this.pdfNavigationRibbonPageGroup1.Name = "pdfNavigationRibbonPageGroup1";
+            // 
+            // pdfPreviousPageBarItem1
+            // 
+            this.pdfPreviousPageBarItem1.Id = 5;
+            this.pdfPreviousPageBarItem1.Name = "pdfPreviousPageBarItem1";
+            // 
+            // pdfNextPageBarItem1
+            // 
+            this.pdfNextPageBarItem1.Id = 6;
+            this.pdfNextPageBarItem1.Name = "pdfNextPageBarItem1";
+            // 
+            // pdfSetPageNumberBarItem1
+            // 
+            this.pdfSetPageNumberBarItem1.Edit = this.repositoryItemPageNumberEdit1;
+            this.pdfSetPageNumberBarItem1.Id = 7;
+            this.pdfSetPageNumberBarItem1.Name = "pdfSetPageNumberBarItem1";
+            // 
+            // repositoryItemPageNumberEdit1
+            // 
+            this.repositoryItemPageNumberEdit1.AutoHeight = false;
+            this.repositoryItemPageNumberEdit1.Mask.EditMask = "########;";
+            this.repositoryItemPageNumberEdit1.Name = "repositoryItemPageNumberEdit1";
+            // 
+            // pdfZoomRibbonPageGroup1
+            // 
+            this.pdfZoomRibbonPageGroup1.ItemLinks.Add(this.pdfZoomOutBarItem1);
+            this.pdfZoomRibbonPageGroup1.ItemLinks.Add(this.pdfZoomInBarItem1);
+            this.pdfZoomRibbonPageGroup1.ItemLinks.Add(this.pdfExactZoomListBarSubItem1);
+            this.pdfZoomRibbonPageGroup1.Name = "pdfZoomRibbonPageGroup1";
+            // 
+            // pdfZoomOutBarItem1
+            // 
+            this.pdfZoomOutBarItem1.Id = 8;
+            this.pdfZoomOutBarItem1.Name = "pdfZoomOutBarItem1";
+            // 
+            // pdfZoomInBarItem1
+            // 
+            this.pdfZoomInBarItem1.Id = 9;
+            this.pdfZoomInBarItem1.Name = "pdfZoomInBarItem1";
+            // 
+            // pdfExactZoomListBarSubItem1
+            // 
+            this.pdfExactZoomListBarSubItem1.Id = 10;
+            this.pdfExactZoomListBarSubItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.pdfZoom10CheckItem1, true),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pdfZoom25CheckItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pdfZoom50CheckItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pdfZoom75CheckItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pdfZoom100CheckItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pdfZoom125CheckItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pdfZoom150CheckItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pdfZoom200CheckItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pdfZoom400CheckItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pdfZoom500CheckItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pdfSetActualSizeZoomModeCheckItem1, true),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pdfSetPageLevelZoomModeCheckItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pdfSetFitWidthZoomModeCheckItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.pdfSetFitVisibleZoomModeCheckItem1)});
+            this.pdfExactZoomListBarSubItem1.Name = "pdfExactZoomListBarSubItem1";
+            this.pdfExactZoomListBarSubItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
+            // 
+            // pdfZoom10CheckItem1
+            // 
+            this.pdfZoom10CheckItem1.Id = 11;
+            this.pdfZoom10CheckItem1.Name = "pdfZoom10CheckItem1";
+            // 
+            // pdfZoom25CheckItem1
+            // 
+            this.pdfZoom25CheckItem1.Id = 12;
+            this.pdfZoom25CheckItem1.Name = "pdfZoom25CheckItem1";
+            // 
+            // pdfZoom50CheckItem1
+            // 
+            this.pdfZoom50CheckItem1.Id = 13;
+            this.pdfZoom50CheckItem1.Name = "pdfZoom50CheckItem1";
+            // 
+            // pdfZoom75CheckItem1
+            // 
+            this.pdfZoom75CheckItem1.Id = 14;
+            this.pdfZoom75CheckItem1.Name = "pdfZoom75CheckItem1";
+            // 
+            // pdfZoom100CheckItem1
+            // 
+            this.pdfZoom100CheckItem1.Id = 15;
+            this.pdfZoom100CheckItem1.Name = "pdfZoom100CheckItem1";
+            // 
+            // pdfZoom125CheckItem1
+            // 
+            this.pdfZoom125CheckItem1.Id = 16;
+            this.pdfZoom125CheckItem1.Name = "pdfZoom125CheckItem1";
+            // 
+            // pdfZoom150CheckItem1
+            // 
+            this.pdfZoom150CheckItem1.Id = 17;
+            this.pdfZoom150CheckItem1.Name = "pdfZoom150CheckItem1";
+            // 
+            // pdfZoom200CheckItem1
+            // 
+            this.pdfZoom200CheckItem1.Id = 18;
+            this.pdfZoom200CheckItem1.Name = "pdfZoom200CheckItem1";
+            // 
+            // pdfZoom400CheckItem1
+            // 
+            this.pdfZoom400CheckItem1.Id = 19;
+            this.pdfZoom400CheckItem1.Name = "pdfZoom400CheckItem1";
+            // 
+            // pdfZoom500CheckItem1
+            // 
+            this.pdfZoom500CheckItem1.Id = 20;
+            this.pdfZoom500CheckItem1.Name = "pdfZoom500CheckItem1";
+            // 
+            // pdfSetActualSizeZoomModeCheckItem1
+            // 
+            this.pdfSetActualSizeZoomModeCheckItem1.Id = 21;
+            this.pdfSetActualSizeZoomModeCheckItem1.Name = "pdfSetActualSizeZoomModeCheckItem1";
+            // 
+            // pdfSetPageLevelZoomModeCheckItem1
+            // 
+            this.pdfSetPageLevelZoomModeCheckItem1.Id = 22;
+            this.pdfSetPageLevelZoomModeCheckItem1.Name = "pdfSetPageLevelZoomModeCheckItem1";
+            // 
+            // pdfSetFitWidthZoomModeCheckItem1
+            // 
+            this.pdfSetFitWidthZoomModeCheckItem1.Id = 23;
+            this.pdfSetFitWidthZoomModeCheckItem1.Name = "pdfSetFitWidthZoomModeCheckItem1";
+            // 
+            // pdfSetFitVisibleZoomModeCheckItem1
+            // 
+            this.pdfSetFitVisibleZoomModeCheckItem1.Id = 24;
+            this.pdfSetFitVisibleZoomModeCheckItem1.Name = "pdfSetFitVisibleZoomModeCheckItem1";
+            // 
+            // pdfTextCommentPageGroup1
+            // 
+            this.pdfTextCommentPageGroup1.ItemLinks.Add(this.pdfTextHighlightBarItem1);
+            this.pdfTextCommentPageGroup1.ItemLinks.Add(this.pdfTextStrikethroughBarItem1);
+            this.pdfTextCommentPageGroup1.ItemLinks.Add(this.pdfTextUnderlineBarItem1);
+            this.pdfTextCommentPageGroup1.Name = "pdfTextCommentPageGroup1";
+            // 
+            // pdfCommentRibbonPage1
+            // 
+            this.pdfCommentRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.pdfTextCommentPageGroup1});
+            this.pdfCommentRibbonPage1.Name = "pdfCommentRibbonPage1";
+            // 
+            // pdfTextHighlightBarItem1
+            // 
+            this.pdfTextHighlightBarItem1.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.CheckDropDown;
+            this.pdfTextHighlightBarItem1.Id = 25;
+            this.pdfTextHighlightBarItem1.Name = "pdfTextHighlightBarItem1";
+            // 
+            // pdfTextStrikethroughBarItem1
+            // 
+            this.pdfTextStrikethroughBarItem1.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.CheckDropDown;
+            this.pdfTextStrikethroughBarItem1.Id = 26;
+            this.pdfTextStrikethroughBarItem1.Name = "pdfTextStrikethroughBarItem1";
+            // 
+            // pdfTextUnderlineBarItem1
+            // 
+            this.pdfTextUnderlineBarItem1.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.CheckDropDown;
+            this.pdfTextUnderlineBarItem1.Id = 27;
+            this.pdfTextUnderlineBarItem1.Name = "pdfTextUnderlineBarItem1";
+            // 
+            // pdfFormDataBarPageGroup1
+            // 
+            this.pdfFormDataBarPageGroup1.ItemLinks.Add(this.pdfExportFormDataBarItem1);
+            this.pdfFormDataBarPageGroup1.ItemLinks.Add(this.pdfImportFormDataBarItem1);
+            this.pdfFormDataBarPageGroup1.Name = "pdfFormDataBarPageGroup1";
+            // 
+            // pdfFormDataRibbonPage1
+            // 
+            this.pdfFormDataRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.pdfFormDataBarPageGroup1});
+            this.pdfFormDataRibbonPage1.Name = "pdfFormDataRibbonPage1";
+            // 
+            // pdfExportFormDataBarItem1
+            // 
+            this.pdfExportFormDataBarItem1.Id = 28;
+            this.pdfExportFormDataBarItem1.Name = "pdfExportFormDataBarItem1";
+            // 
+            // pdfImportFormDataBarItem1
+            // 
+            this.pdfImportFormDataBarItem1.Id = 29;
+            this.pdfImportFormDataBarItem1.Name = "pdfImportFormDataBarItem1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(902, 595);
+            this.ClientSize = new System.Drawing.Size(667, 477);
             this.Controls.Add(this.pdfViewer1);
-            this.Controls.Add(this.barDockControlLeft);
-            this.Controls.Add(this.barDockControlRight);
-            this.Controls.Add(this.barDockControlBottom);
-            this.Controls.Add(this.barDockControlTop);
+            this.Controls.Add(this.ribbonControl1);
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PDF Viewer";
-            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPageNumberEdit1)).EndInit();
+            this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pdfBarController1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPageNumberEdit1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -419,8 +415,7 @@
         #endregion
 
         private DevExpress.XtraPdfViewer.PdfViewer pdfViewer1;
-        private DevExpress.XtraBars.BarManager barManager1;
-        private DevExpress.XtraPdfViewer.Bars.PdfCommandBar pdfCommandBar1;
+        private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
         private DevExpress.XtraPdfViewer.Bars.PdfFileOpenBarItem pdfFileOpenBarItem1;
         private DevExpress.XtraPdfViewer.Bars.PdfFileSaveAsBarItem pdfFileSaveAsBarItem1;
         private DevExpress.XtraPdfViewer.Bars.PdfFilePrintBarItem pdfFilePrintBarItem1;
@@ -446,16 +441,20 @@
         private DevExpress.XtraPdfViewer.Bars.PdfSetPageLevelZoomModeCheckItem pdfSetPageLevelZoomModeCheckItem1;
         private DevExpress.XtraPdfViewer.Bars.PdfSetFitWidthZoomModeCheckItem pdfSetFitWidthZoomModeCheckItem1;
         private DevExpress.XtraPdfViewer.Bars.PdfSetFitVisibleZoomModeCheckItem pdfSetFitVisibleZoomModeCheckItem1;
-        private DevExpress.XtraPdfViewer.Bars.PdfExportFormDataBarItem pdfExportFormDataBarItem1;
-        private DevExpress.XtraPdfViewer.Bars.PdfImportFormDataBarItem pdfImportFormDataBarItem1;
-        private DevExpress.XtraPdfViewer.Bars.PdfCommentBar pdfCommentBar1;
         private DevExpress.XtraPdfViewer.Bars.PdfTextHighlightBarItem pdfTextHighlightBarItem1;
         private DevExpress.XtraPdfViewer.Bars.PdfTextStrikethroughBarItem pdfTextStrikethroughBarItem1;
         private DevExpress.XtraPdfViewer.Bars.PdfTextUnderlineBarItem pdfTextUnderlineBarItem1;
-        private DevExpress.XtraBars.BarDockControl barDockControlTop;
-        private DevExpress.XtraBars.BarDockControl barDockControlBottom;
-        private DevExpress.XtraBars.BarDockControl barDockControlLeft;
-        private DevExpress.XtraBars.BarDockControl barDockControlRight;
+        private DevExpress.XtraPdfViewer.Bars.PdfExportFormDataBarItem pdfExportFormDataBarItem1;
+        private DevExpress.XtraPdfViewer.Bars.PdfImportFormDataBarItem pdfImportFormDataBarItem1;
+        private DevExpress.XtraPdfViewer.Bars.PdfRibbonPage pdfRibbonPage1;
+        private DevExpress.XtraPdfViewer.Bars.PdfFileRibbonPageGroup pdfFileRibbonPageGroup1;
+        private DevExpress.XtraPdfViewer.Bars.PdfFindRibbonPageGroup pdfFindRibbonPageGroup1;
+        private DevExpress.XtraPdfViewer.Bars.PdfNavigationRibbonPageGroup pdfNavigationRibbonPageGroup1;
+        private DevExpress.XtraPdfViewer.Bars.PdfZoomRibbonPageGroup pdfZoomRibbonPageGroup1;
+        private DevExpress.XtraPdfViewer.Bars.PdfCommentRibbonPage pdfCommentRibbonPage1;
+        private DevExpress.XtraPdfViewer.Bars.PdfTextCommentPageGroup pdfTextCommentPageGroup1;
+        private DevExpress.XtraPdfViewer.Bars.PdfFormDataRibbonPage pdfFormDataRibbonPage1;
+        private DevExpress.XtraPdfViewer.Bars.PdfFormDataBarPageGroup pdfFormDataBarPageGroup1;
         private DevExpress.XtraPdfViewer.Bars.PdfBarController pdfBarController1;
     }
 }
